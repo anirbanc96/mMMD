@@ -1,0 +1,343 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{plainnat}
+\citation{smirnov1948table}
+\citation{wald1940test}
+\citation{mann1947test,wilcoxon1945individual}
+\citation{anderson1962distribution}
+\citation{weiss1960two}
+\citation{bickel1969distribution}
+\citation{friedman1979multivariate,rosenbaum2005exact,bhattacharya2019general}
+\citation{szekely2003statistics,szekely2013energy}
+\citation{gretton2009fast,gretton2012kernel,ramdas2015decreasing,shekhar2022permutation,chatterjee2025boosting}
+\citation{pan2018ball,banerjee2025high}
+\citation{lopez2017revisiting,kim2021classification}
+\citation{gretton2012kernel}
+\citation{gretton2009fast,gretton2012kernel}
+\citation{gretton2009fast,chatterjee2025boosting}
+\citation{gretton2012kernel}
+\citation{gretton2012kernel}
+\citation{zaremba2013b,jitkrittum2017linear}
+\providecommand \oddpage@label [2]{}
+\jmlr@title{A Martingale Kernel Two-Sample Test}{A Martingale Kernel Two-Sample Test}
+\jmlr@author{\Name {Anirban Chatterjee} \Email {anirbanc@uchicago.edu}\\ \addr Department of Statistics, University of Chicago \AND \Name {Aaditya Ramdas} \Email {aramdas@stat.cmu.edu}\\ \addr Department of Statistics and Data Science, Machine Learning Department, Carnegie Mellon University }{\Name {Anirban Chatterjee} \Email {anirbanc@uchicago.edu}\\ \addr Department of Statistics, University of Chicago \AND \Name {Aaditya Ramdas} \Email {aramdas@stat.cmu.edu}\\ \addr Department of Statistics and Data Science, Machine Learning Department, Carnegie Mellon University }
+\newlabel{jmlrstart}{{}{1}{}{Doc-Start}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.0.1}\protected@file@percent }
+\newlabel{eq:H01}{{1.1}{1}{Introduction}{equation.0.1.1}{}}
+\citation{gretton2012kernel}
+\citation{gretton2012kernel}
+\citation{zaremba2013b}
+\citation{shekhar2022permutation}
+\citation{gretton2012kernel}
+\citation{gretton2012kernel}
+\citation{zaremba2013b}
+\citation{shekhar2022permutation}
+\citation{gretton2012kernel}
+\citation{kubler2022witness}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Overview of the Proposed Method}{2}{subsection.0.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The $m\mathrm  {MMD}$-test: (a) Empirical distribution of the $m\mathrm  {MMD}$-test statistic (see \eqref  {eq:def_eta_n} for a formal definition) under $\bm  {H}_0$ with $d = 20,200$ and $P = Q$ are $d$-dimensional standard Gaussian distributions. (b) The second figure compares power of the $m\mathrm  {MMD}$ test with the quadratic time MMD test (implemented with $200$ permutations) from \cite  {gretton2012kernel} and computationally efficient variants from \cite  {gretton2012kernel}, \cite  {zaremba2013b} and \cite  {shekhar2022permutation}. The main takeaway is that the MMD is the most powerful but most computationally inefficient. The $x\mathrm  {MMD}$ and $m\mathrm  {MMD}$ are more powerful than the others, but the latter avoids sample splitting. (c) The third figure shows the computational efficiency of the proposed test against the permutation-based quadratic time MMD test. All tests use the Gaussian kernel with median bandwidth.}}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:overview}{{1}{2}{The $m\MMD $-test: (a) Empirical distribution of the $m\MMD $-test statistic (see \eqref {eq:def_eta_n} for a formal definition) under $\bH _0$ with $d = 20,200$ and $P = Q$ are $d$-dimensional standard Gaussian distributions. (b) The second figure compares power of the $m\MMD $ test with the quadratic time MMD test (implemented with $200$ permutations) from \cite {gretton2012kernel} and computationally efficient variants from \cite {gretton2012kernel}, \cite {zaremba2013b} and \cite {shekhar2022permutation}. The main takeaway is that the MMD is the most powerful but most computationally inefficient. The $x\MMD $ and $m\MMD $ are more powerful than the others, but the latter avoids sample splitting. (c) The third figure shows the computational efficiency of the proposed test against the permutation-based quadratic time MMD test. All tests use the Gaussian kernel with median bandwidth}{figure.caption.1}{}}
+\citation{gretton2006kernel,kim2021comparing}
+\citation{wolfer2025variance}
+\citation{balsubramani2016sequential}
+\citation{shekhar2023nonparametric}
+\citation{gretton2012kernel}
+\citation{gretton2009fast}
+\citation{gretton2012kernel}
+\citation{zaremba2013b,ramdas2015adaptivity,reddi2015high}
+\citation{schrab2022efficient}
+\newlabel{eq:mMMD_test}{{1.2}{3}{Overview of the Proposed Method}{equation.0.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Related Works}{3}{subsection.0.1.2}\protected@file@percent }
+\newlabel{sec:related_works}{{1.2}{3}{Related Works}{subsection.0.1.2}{}}
+\citation{kubler2022witness}
+\citation{shekhar2022permutation}
+\citation{zhao2015fastmmd,zhao2022comparing,choi2024computational,mukherjee2025minimax}
+\citation{domingo2023compress}
+\citation{chatalic2025efficient}
+\citation{gretton2012kernel}
+\@writefile{toc}{\contentsline {section}{\numberline {2}The martingale Maximum Mean Discrepancy $(m\mathrm  {MMD})$ Test}{4}{section.0.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Preliminaries}{4}{subsection.0.2.1}\protected@file@percent }
+\citation{gretton2012kernel}
+\citation{park2020measure}
+\citation{zaremba2013b}
+\citation{shekhar2022permutation}
+\citation{zaremba2013b}
+\citation{shekhar2022permutation}
+\citation{gretton2012kernel}
+\newlabel{assumption:K}{{2.1}{5}{Preliminaries}{subsection.0.2.1}{}}
+\newlabel{eq:def_MMD}{{2.1}{5}{Preliminaries}{equation.0.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Deriving the $m\mathrm  {MMD}$ test}{5}{subsection.0.2.2}\protected@file@percent }
+\newlabel{sec:derive_mMMD_test}{{2.2}{5}{Deriving the $m\MMD $ test}{subsection.0.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A visual illustration of the main difference in computing the quadratic-time MMD (\texttt  {MMD}), our proposed \texttt  {mMMD}, the block-MMD (\texttt  {BMMD}) from \citet  {zaremba2013b}, and the cross-MMD (\texttt  {xMMD}) from \citet  {shekhar2022permutation}. The \textcolor {cyan}{highlighted} regions indicate the sample pairs used in the computation. The figure shows that the quadratic-time MMD considers all off-diagonal pairwise kernel evaluations between the combined samples. \texttt  {BMMD} partitions the data into blocks and averages the pairwise kernel evaluations within each block. \texttt  {xMMD} splits the samples into two halves and evaluates kernels only across the splits. In contrast, our proposed \texttt  {mMMD} computes pairwise kernel values by taking the lower triangular part of within-sample and between-sample blocks. However, we emphasize that, due to the symmetry of the kernel, the terms used by \texttt  {MMD} and \texttt  {mMMD} are equivalent. The principal distinction between the two lies in the normalization procedure: \texttt  {mMMD} computes a row-wise mean followed by an average across rows (see \eqref  {eq:Tn_alt}), whereas \texttt  {MMD} applies a global mean over all elements.}}{5}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:mmd_variants}{{2}{5}{A visual illustration of the main difference in computing the quadratic-time MMD (\texttt {MMD}), our proposed \texttt {mMMD}, the block-MMD (\texttt {BMMD}) from \citet {zaremba2013b}, and the cross-MMD (\texttt {xMMD}) from \citet {shekhar2022permutation}. The \textcolor {cyan}{highlighted} regions indicate the sample pairs used in the computation. The figure shows that the quadratic-time MMD considers all off-diagonal pairwise kernel evaluations between the combined samples. \texttt {BMMD} partitions the data into blocks and averages the pairwise kernel evaluations within each block. \texttt {xMMD} splits the samples into two halves and evaluates kernels only across the splits. In contrast, our proposed \texttt {mMMD} computes pairwise kernel values by taking the lower triangular part of within-sample and between-sample blocks. However, we emphasize that, due to the symmetry of the kernel, the terms used by \texttt {MMD} and \texttt {mMMD} are equivalent. The principal distinction between the two lies in the normalization procedure: \texttt {mMMD} computes a row-wise mean followed by an average across rows (see \eqref {eq:Tn_alt}), whereas \texttt {MMD} applies a global mean over all elements}{figure.caption.2}{}}
+\citation{hall2014martingale}
+\citation{gretton2012kernel}
+\citation{shekhar2022permutation}
+\citation{zaremba2013b}
+\citation{jitkrittum2017linear}
+\newlabel{eq:martingale_seq_Tn}{{2.2}{6}{Deriving the $m\MMD $ test}{equation.0.2.2}{}}
+\newlabel{eq:sigma_n_exp}{{2.3}{6}{Deriving the $m\MMD $ test}{equation.0.2.3}{}}
+\newlabel{eq:def_eta_n}{{2.4}{6}{Deriving the $m\MMD $ test}{equation.0.2.4}{}}
+\newlabel{eq:Tn_alt}{{2.5}{6}{Deriving the $m\MMD $ test}{equation.0.2.5}{}}
+\citation{fan2018berry}
+\citation{li2024optimality}
+\citation{shekhar2022permutation}
+\citation{li2024optimality}
+\citation{bentkus1996berry}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Asymptotic Null Distribution of $m\mathrm  {MMD}$ Test Statistic}{7}{section.0.3}\protected@file@percent }
+\newlabel{sec:null_dist_section}{{3}{7}{Asymptotic Null Distribution of $m\MMD $ Test Statistic}{section.0.3}{}}
+\newlabel{thm:null_clt_fixed}{{2}{7}{Asymptotic Null Distribution of $m\MMD $ Test Statistic}{section.0.3}{}}
+\newlabel{thm:null_clt_general}{{3}{7}{Asymptotic Null Distribution of $m\MMD $ Test Statistic}{section.0.3}{}}
+\newlabel{eq:null_clt_cond2}{{3.1}{7}{Asymptotic Null Distribution of $m\MMD $ Test Statistic}{equation.0.3.1}{}}
+\citation{shekhar2022permutation}
+\newlabel{remark:non_median_band}{{5}{8}{Asymptotic Null Distribution of $m\MMD $ Test Statistic}{equation.0.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Consistency of the $m\mathrm  {MMD}$ Test}{8}{section.0.4}\protected@file@percent }
+\newlabel{thm:fixed_consistency}{{6}{8}{Consistency of the $m\MMD $ Test}{section.0.4}{}}
+\newlabel{thm:gen_consistency}{{7}{8}{Consistency of the $m\MMD $ Test}{section.0.4}{}}
+\citation{gretton2012kernel}
+\citation{shekhar2022permutation}
+\citation{gretton2012kernel}
+\citation{zaremba2013b}
+\citation{shekhar2022permutation}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Distribution under the alternative}{9}{section.0.5}\protected@file@percent }
+\newlabel{eq:def_Hn_main}{{5.1}{9}{Distribution under the alternative}{equation.0.5.1}{}}
+\newlabel{eq:def_h_n}{{5.2}{9}{Distribution under the alternative}{equation.0.5.2}{}}
+\newlabel{thm:general_alt_dist}{{8}{9}{Distribution under the alternative}{equation.0.5.2}{}}
+\newlabel{eq:alt_dist}{{5.3}{9}{Distribution under the alternative}{equation.0.5.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{9}{section.0.6}\protected@file@percent }
+\newlabel{sec:experiments}{{6}{9}{Experiments}{section.0.6}{}}
+\citation{gretton2012kernel}
+\citation{shekhar2022permutation}
+\citation{shekhar2023nonparametric}
+\citation{shekhar2022permutation}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Limiting Null Distribution of $\eta _n$}{10}{subsection.0.6.1}\protected@file@percent }
+\newlabel{sec:empirical_null}{{6.1}{10}{Limiting Null Distribution of $\eta _n$}{subsection.0.6.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Empirical null distribution of the $m$-MMD test statistic $\eta _n$ from equation~\eqref  {eq:def_eta_n}. The left two figures use a Gaussian kernel with the median heuristic, while the right two figures use a Laplace kernel, also with the median heuristic. The underlying data distribution is $\mathrm  {N}(\mathbf  {0}_d, \mathbf  {I}_d)$.}}{10}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:null_dist_gauss}{{3}{10}{Empirical null distribution of the $m$-MMD test statistic $\eta _n$ from equation~\eqref {eq:def_eta_n}. The left two figures use a Gaussian kernel with the median heuristic, while the right two figures use a Laplace kernel, also with the median heuristic. The underlying data distribution is $\mathrm {N}(\mathbf {0}_d, \mathbf {I}_d)$}{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Empirical null distribution of the $m$-MMD test statistic $\eta _n$ from equation~\eqref  {eq:def_eta_n}. The left two figures use a Gaussian kernel with the median heuristic, while the right two use a Laplace kernel, also with the median heuristic. The underlying data distribution is $t_d(10)$.}}{10}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:null_dist_t}{{4}{10}{Empirical null distribution of the $m$-MMD test statistic $\eta _n$ from equation~\eqref {eq:def_eta_n}. The left two figures use a Gaussian kernel with the median heuristic, while the right two use a Laplace kernel, also with the median heuristic. The underlying data distribution is $t_d(10)$}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Power Experiments}{10}{subsection.0.6.2}\protected@file@percent }
+\newlabel{sec:power_sims}{{6.2}{10}{Power Experiments}{subsection.0.6.2}{}}
+\citation{lecun1998mnist}
+\citation{schrab2023mmd,chatterjee2025boosting}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Empirical power of the $m$-MMD test compared to the original quadratic-time \texttt  {MMD}, the linear-time \texttt  {LMMD}, the block-based \texttt  {BMMD}, and the cross-MMD (\texttt  {xMMD}) tests. From left to right, the figures correspond to $(d, j, \varepsilon ) = (10, 5, 0.3)$, $(50, 5, 0.4)$, and $(100, 5, 0.5)$.}}{11}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:power_comparison}{{5}{11}{Empirical power of the $m$-MMD test compared to the original quadratic-time \texttt {MMD}, the linear-time \texttt {LMMD}, the block-based \texttt {BMMD}, and the cross-MMD (\texttt {xMMD}) tests. From left to right, the figures correspond to $(d, j, \varepsilon ) = (10, 5, 0.3)$, $(50, 5, 0.4)$, and $(100, 5, 0.5)$}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Real Data Experiment}{11}{subsection.0.6.3}\protected@file@percent }
+\newlabel{sec:real_data}{{6.3}{11}{Real Data Experiment}{subsection.0.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Empirical power comparison on MNIST.}}{11}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:mnist_asymptotic}{{6}{11}{Empirical power comparison on MNIST}{figure.caption.6}{}}
+\citation{gretton2012optimal,liu2020learning}
+\citation{schrab2023mmd,schrab2022efficient,biggs2023mmd,chatterjee2025boosting}
+\citation{hall2014martingale}
+\citation{chatterjee2025boosting}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Extensions}{12}{section.0.7}\protected@file@percent }
+\newlabel{sec:broad_scope}{{7}{12}{Extensions}{section.0.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}\texttt  {mmMMD:} Multi-kernel test using $m\mathrm  {MMD}$}{12}{subsection.0.7.1}\protected@file@percent }
+\newlabel{sec:multi_kernel}{{7.1}{12}{\texttt {mmMMD:} Multi-kernel test using $m\MMD $}{subsection.0.7.1}{}}
+\newlabel{thm:multi_kernel_mMMD}{{9}{12}{\texttt {mmMMD:} Multi-kernel test using $m\MMD $}{subsection.0.7.1}{}}
+\citation{gretton2012kernel}
+\citation{gretton2012kernel}
+\citation{li2024optimality}
+\citation{li2024optimality}
+\citation{shekhar2022permutation}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces (Left) Empirical null distribution of \texttt  {mmMMD} and (Right) Empirical power of \texttt  {mmMMD}.}}{13}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:mmmmd_power_comparison}{{7}{13}{(Left) Empirical null distribution of \texttt {mmMMD} and (Right) Empirical power of \texttt {mmMMD}}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Generalizing the $m\mathrm  {MMD}$ Statistic}{13}{subsection.0.7.2}\protected@file@percent }
+\newlabel{sec:general_mMMD}{{7.2}{13}{Generalizing the $m\MMD $ Statistic}{subsection.0.7.2}{}}
+\citation{sejdinovic2013equivalence}
+\citation{gretton2007kernel}
+\citation{choi2024computational,chatalic2025efficient,domingo2023compress}
+\bibdata{references}
+\bibcite{anderson1962distribution}{{1}{1962}{{Anderson}}{{}}}
+\bibcite{apostol1999elementary}{{2}{1999}{{Apostol}}{{}}}
+\bibcite{balsubramani2016sequential}{{3}{2016}{{Balsubramani and Ramdas}}{{}}}
+\bibcite{banerjee2025high}{{4}{2025}{{Banerjee and Ghosh}}{{}}}
+\newlabel{remark:non_minimax}{{10}{14}{Generalizing the $m\MMD $ Statistic}{subsection.0.7.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion and Future Work}{14}{section.0.8}\protected@file@percent }
+\bibcite{bentkus1996berry}{{5}{1996}{{Bentkus and G{\"o}tze}}{{}}}
+\bibcite{berlinet2011reproducing}{{6}{2011}{{Berlinet and Thomas-Agnan}}{{}}}
+\bibcite{bhattacharya2019general}{{7}{2019}{{Bhattacharya}}{{}}}
+\bibcite{bickel1969distribution}{{8}{1969}{{Bickel}}{{}}}
+\bibcite{biggs2023mmd}{{9}{2023}{{Biggs et~al.}}{{Biggs, Schrab, and Gretton}}}
+\bibcite{chatalic2025efficient}{{10}{2025}{{Chatalic et~al.}}{{Chatalic, Letizia, Schreuder, and Rosasco}}}
+\bibcite{chatterjee2025boosting}{{11}{2025}{{Chatterjee and Bhattacharya}}{{}}}
+\bibcite{choi2024computational}{{12}{2024}{{Choi and Kim}}{{}}}
+\bibcite{domingo2023compress}{{13}{2023}{{Domingo-Enrich et~al.}}{{Domingo-Enrich, Dwivedi, and Mackey}}}
+\bibcite{fan2018berry}{{14}{2018}{{Fan and Shao}}{{}}}
+\bibcite{friedman1979multivariate}{{15}{1979}{{Friedman and Rafsky}}{{}}}
+\bibcite{gretton2006kernel}{{16}{2006}{{Gretton et~al.}}{{Gretton, Borgwardt, Rasch, Sch{\"o}lkopf, and Smola}}}
+\bibcite{gretton2007kernel}{{17}{2007}{{Gretton et~al.}}{{Gretton, Fukumizu, Teo, Song, Sch{\"o}lkopf, and Smola}}}
+\bibcite{gretton2009fast}{{18}{2009}{{Gretton et~al.}}{{Gretton, Fukumizu, Harchaoui, and Sriperumbudur}}}
+\bibcite{gretton2012kernel}{{19}{2012{a}}{{Gretton et~al.}}{{Gretton, Borgwardt, Rasch, Sch{\"o}lkopf, and Smola}}}
+\bibcite{gretton2012optimal}{{20}{2012{b}}{{Gretton et~al.}}{{Gretton, Sejdinovic, Strathmann, Balakrishnan, Pontil, Fukumizu, and Sriperumbudur}}}
+\bibcite{hall2014martingale}{{21}{2014}{{Hall and Heyde}}{{}}}
+\bibcite{jitkrittum2017linear}{{22}{2017}{{Jitkrittum et~al.}}{{Jitkrittum, Xu, Szab{\'o}, Fukumizu, and Gretton}}}
+\bibcite{kim2021comparing}{{23}{2021}{{Kim}}{{}}}
+\bibcite{kim2021classification}{{24}{2021}{{Kim et~al.}}{{Kim, Ramdas, Singh, and Wasserman}}}
+\bibcite{kubler2022witness}{{25}{2022}{{K{\"u}bler et~al.}}{{K{\"u}bler, Jitkrittum, Sch{\"o}lkopf, and Muandet}}}
+\bibcite{lecun1998mnist}{{26}{1998}{{LeCun}}{{}}}
+\bibcite{li2024optimality}{{27}{2024}{{Li and Yuan}}{{}}}
+\bibcite{liu2020learning}{{28}{2020}{{Liu et~al.}}{{Liu, Xu, Lu, Zhang, Gretton, and Sutherland}}}
+\bibcite{lopez2017revisiting}{{29}{2017}{{Lopez-Paz and Oquab}}{{}}}
+\bibcite{mann1947test}{{30}{1947}{{Mann and Whitney}}{{}}}
+\bibcite{mukherjee2025minimax}{{31}{2025}{{Mukherjee and Sriperumbudur}}{{}}}
+\bibcite{pan2018ball}{{32}{2018}{{Pan et~al.}}{{Pan, Tian, Wang, and Zhang}}}
+\bibcite{park2020measure}{{33}{2020}{{Park and Muandet}}{{}}}
+\bibcite{ramdas2015adaptivity}{{34}{2015{a}}{{Ramdas et~al.}}{{Ramdas, Reddi, Poczos, Singh, and Wasserman}}}
+\bibcite{ramdas2015decreasing}{{35}{2015{b}}{{Ramdas et~al.}}{{Ramdas, Reddi, P{\'o}czos, Singh, and Wasserman}}}
+\bibcite{reddi2015high}{{36}{2015}{{Reddi et~al.}}{{Reddi, Ramdas, P{\'o}czos, Singh, and Wasserman}}}
+\bibcite{rosenbaum2005exact}{{37}{2005}{{Rosenbaum}}{{}}}
+\bibcite{schrab2022efficient}{{38}{2022}{{Schrab et~al.}}{{Schrab, Kim, Guedj, and Gretton}}}
+\bibcite{schrab2023mmd}{{39}{2023}{{Schrab et~al.}}{{Schrab, Kim, Albert, Laurent, Guedj, and Gretton}}}
+\bibcite{sejdinovic2013equivalence}{{40}{2013}{{Sejdinovic et~al.}}{{Sejdinovic, Sriperumbudur, Gretton, and Fukumizu}}}
+\bibcite{shekhar2023nonparametric}{{41}{2023}{{Shekhar and Ramdas}}{{}}}
+\bibcite{shekhar2022permutation}{{42}{2022}{{Shekhar et~al.}}{{Shekhar, Kim, and Ramdas}}}
+\bibcite{smirnov1948table}{{43}{1948}{{Smirnov}}{{}}}
+\bibcite{szekely2003statistics}{{44}{2003}{{Sz{\'e}kely}}{{}}}
+\bibcite{szekely2013energy}{{45}{2013}{{Sz{\'e}kely and Rizzo}}{{}}}
+\bibcite{wald1940test}{{46}{1940}{{Wald and Wolfowitz}}{{}}}
+\bibcite{weiss1960two}{{47}{1960}{{Weiss}}{{}}}
+\bibcite{wilcoxon1945individual}{{48}{1945}{{Wilcoxon}}{{}}}
+\bibcite{wolfer2025variance}{{49}{2025}{{Wolfer and Alquier}}{{}}}
+\bibcite{zaremba2013b}{{50}{2013}{{Zaremba et~al.}}{{Zaremba, Gretton, and Blaschko}}}
+\bibcite{zhao2015fastmmd}{{51}{2015}{{Zhao and Meng}}{{}}}
+\bibcite{zhao2022comparing}{{52}{2022}{{Zhao et~al.}}{{Zhao, Sinha, He, Perreault, Song, and Ermon}}}
+\citation{gretton2012kernel}
+\citation{gretton2012kernel}
+\@writefile{toc}{\contentsline {section}{\numberline {A}A general class of Martingale based MMD two-sample test}{20}{section.0.A}\protected@file@percent }
+\newlabel{sec:Tngamma}{{A}{20}{A general class of Martingale based MMD two-sample test}{section.0.A}{}}
+\newlabel{eq:def_H_n}{{A.1}{20}{A general class of Martingale based MMD two-sample test}{equation.0.A.1}{}}
+\newlabel{eq:def_T_n_gamma}{{A.2}{20}{A general class of Martingale based MMD two-sample test}{equation.0.A.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Asymptotic Null Distribution of $T_{n,\gamma }$}{20}{subsection.0.A.1}\protected@file@percent }
+\newlabel{sec:null_dist_gen}{{A.1}{20}{Asymptotic Null Distribution of $T_{n,\gamma }$}{subsection.0.A.1}{}}
+\newlabel{eq:defbarK}{{A.3}{20}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.3}{}}
+\citation{fan2018berry}
+\citation{li2024optimality}
+\newlabel{eq:tnalpha}{{A.4}{21}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.4}{}}
+\newlabel{thm:berry_essen_H0}{{12}{21}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.4}{}}
+\newlabel{eq:def_Rn1}{{A.5}{21}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.5}{}}
+\newlabel{eq:def_Rn2}{{A.6}{21}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.6}{}}
+\newlabel{assumption:kernelconvg}{{A.1}{21}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.6}{}}
+\citation{shekhar2022permutation}
+\newlabel{assumption:4thand22moment}{{A.2}{22}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.6}{}}
+\newlabel{cor:NullCLT}{{14}{22}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.6}{}}
+\newlabel{eq:def_test}{{A.7}{22}{Asymptotic Null Distribution of $T_{n,\gamma }$}{equation.0.A.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Consistency against fixed alternatives}{22}{subsection.0.A.2}\protected@file@percent }
+\newlabel{sec:consistency_gen}{{A.2}{22}{Consistency against fixed alternatives}{subsection.0.A.2}{}}
+\newlabel{thm:general_consistency}{{15}{22}{Consistency against fixed alternatives}{subsection.0.A.2}{}}
+\newlabel{eq:genconsistent_assumption}{{A.8}{22}{Consistency against fixed alternatives}{equation.0.A.8}{}}
+\citation{li2024optimality}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Minimax optimality against smooth local alternatives}{23}{subsection.0.A.3}\protected@file@percent }
+\newlabel{sec:minimax}{{A.3}{23}{Minimax optimality against smooth local alternatives}{subsection.0.A.3}{}}
+\newlabel{thm:optimality}{{16}{23}{Minimax optimality against smooth local alternatives}{subsection.0.A.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Additional Experiments}{23}{section.0.B}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Comparing performance of $T_{n,\gamma }$ for different $\gamma $}{24}{subsection.0.B.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Empirical power comparison.}}{24}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:mnist_asymptotic_gamma}{{8}{24}{Empirical power comparison}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}Type-I validity of $m\mathrm  {MMD}$}{24}{subsection.0.B.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Type-I error control for the original quadratic time \texttt  {MMD}, \texttt  {mMMD, xMMD} and the linear time \texttt  {LMMD} and block-based \texttt  {BMMD}.}}{24}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:type-I}{{9}{24}{Type-I error control for the original quadratic time \texttt {MMD}, \texttt {mMMD, xMMD} and the linear time \texttt {LMMD} and block-based \texttt {BMMD}}{figure.caption.13}{}}
+\citation{shekhar2022permutation}
+\citation{shekhar2022permutation}
+\citation{shekhar2022permutation}
+\citation{fan2018berry}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}Performance in minimax regime}{25}{subsection.0.B.3}\protected@file@percent }
+\newlabel{sec:minimax_empirical}{{B.3}{25}{Performance in minimax regime}{subsection.0.B.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Performance of $\mathrm  {MMD},m\mathrm  {MMD}$, $x\mathrm  {MMD}$ \citep  {shekhar2022permutation} and the linear time \texttt  {LMMD} and the block-based \texttt  {BMMD} in the setting from Section \ref {sec:minimax_empirical}.}}{25}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:minimax_empirical}{{10}{25}{Performance of $\MMD ,m\MMD $, $x\MMD $ \citep {shekhar2022permutation} and the linear time \texttt {LMMD} and the block-based \texttt {BMMD} in the setting from Section \ref {sec:minimax_empirical}}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Proof of results from Section~\ref {sec:Tngamma}}{25}{section.0.C}\protected@file@percent }
+\citation{fan2018berry}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Proof of Theorem~\ref {thm:berry_essen_H0}}{26}{subsection.0.C.1}\protected@file@percent }
+\newlabel{sec:proofof_berry_essen}{{C.1}{26}{Proof of Theorem~\ref {thm:berry_essen_H0}}{subsection.0.C.1}{}}
+\newlabel{eq:def_c_alpha}{{C.1}{26}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.1}{}}
+\newlabel{eq:N_n_alpha}{{C.2}{26}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.2}{}}
+\newlabel{eq:replace_W_EWcF}{{C.3}{26}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.3}{}}
+\newlabel{eq:bdd_N_alpha}{{C.4}{27}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.4}{}}
+\newlabel{eq:HbarK}{{C.5}{27}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.5}{}}
+\newlabel{lemma:4thmmntbdd}{{18}{27}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.5}{}}
+\newlabel{eq:bdd_4th_moment}{{C.6}{27}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.6}{}}
+\newlabel{lemma:2nd_term_bdd}{{19}{27}{Proof of Theorem~\ref {thm:berry_essen_H0}}{equation.0.C.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {C.1.1}Proof of Lemma~\ref {lemma:4thmmntbdd}}{27}{subsubsection.0.C.1.1}\protected@file@percent }
+\newlabel{sec:proof_of_4thmmntbdd}{{C.1.1}{27}{Proof of Lemma~\ref {lemma:4thmmntbdd}}{subsubsection.0.C.1.1}{}}
+\newlabel{eq:4thmomentbdd}{{C.7}{27}{Proof of Lemma~\ref {lemma:4thmmntbdd}}{equation.0.C.7}{}}
+\newlabel{eq:4thbddless1}{{C.8}{28}{Proof of Lemma~\ref {lemma:4thmmntbdd}}{equation.0.C.8}{}}
+\newlabel{eq:4thbdd1}{{C.9}{28}{Proof of Lemma~\ref {lemma:4thmmntbdd}}{equation.0.C.9}{}}
+\newlabel{eq:Hn22bddKn22}{{C.10}{28}{Proof of Lemma~\ref {lemma:4thmmntbdd}}{equation.0.C.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {C.1.2}Proof of Lemma~\ref {lemma:2nd_term_bdd}}{28}{subsubsection.0.C.1.2}\protected@file@percent }
+\newlabel{sec:proofof_second_term}{{C.1.2}{28}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{subsubsection.0.C.1.2}{}}
+\newlabel{eq:quad_form_1}{{C.11}{28}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.11}{}}
+\newlabel{eq:expand2ndmmnt}{{C.12}{28}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.12}{}}
+\newlabel{eq:evalH2}{{C.13}{28}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.13}{}}
+\newlabel{eq:Wnialpha_1_sq_decomp}{{C.14}{29}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.14}{}}
+\newlabel{eq:Wnialpha_1_sq_expand}{{C.15}{29}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.15}{}}
+\newlabel{eq:def_L_mnalpha}{{C.16}{29}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.16}{}}
+\newlabel{eq:Wnproddecomp}{{C.17}{29}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.17}{}}
+\newlabel{eq:def_L2_circ}{{C.18}{29}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.18}{}}
+\newlabel{eq:Wnialpha_1_sq_terms}{{C.19}{30}{Proof of Lemma~\ref {lemma:2nd_term_bdd}}{equation.0.C.19}{}}
+\@writefile{toc}{\contentsline {paragraph}{Bound on $L_{1,n,\gamma }$:}{30}{section*.15}\protected@file@percent }
+\newlabel{eq:L1alpha0}{{C.20}{30}{Bound on $L_{1,n,\gamma }$:}{equation.0.C.20}{}}
+\newlabel{eq:L110}{{C.21}{30}{Bound on $L_{1,n,\gamma }$:}{equation.0.C.21}{}}
+\newlabel{eq:L_1_n_alpha_bdd}{{C.22}{30}{Bound on $L_{1,n,\gamma }$:}{equation.0.C.22}{}}
+\citation{apostol1999elementary}
+\@writefile{toc}{\contentsline {paragraph}{Bound on $\zeta _{n,\gamma }$:}{31}{section*.16}\protected@file@percent }
+\newlabel{eq:L2_circ_alpha_equal}{{C.23}{31}{Bound on $\zeta _{n,\gamma }$:}{equation.0.C.23}{}}
+\newlabel{eq:L2_circ_1_equal}{{C.24}{31}{Bound on $\zeta _{n,\gamma }$:}{equation.0.C.24}{}}
+\newlabel{eq:zeta_bdd}{{C.25}{32}{Bound on $\zeta _{n,\gamma }$:}{equation.0.C.25}{}}
+\@writefile{toc}{\contentsline {paragraph}{Bound on $L_{2,n,\gamma } - L_{2,n,\gamma }^\circ $}{32}{section*.17}\protected@file@percent }
+\newlabel{eq:H4Kbar4}{{C.26}{32}{Bound on $L_{2,n,\gamma } - L_{2,n,\gamma }^\circ $}{equation.0.C.26}{}}
+\newlabel{eq:L2_diff_bdd}{{C.27}{32}{Bound on $L_{2,n,\gamma } - L_{2,n,\gamma }^\circ $}{equation.0.C.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {C.1.3}Proof of (\ref {eq:H4Kbar4}):}{33}{subsubsection.0.C.1.3}\protected@file@percent }
+\newlabel{sec:proofofH4Kbar4}{{C.1.3}{33}{Proof of (\ref {eq:H4Kbar4}):}{subsubsection.0.C.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Proof of Theorem~\ref {thm:general_consistency}}{33}{subsection.0.C.2}\protected@file@percent }
+\newlabel{sec:proofofgeneralconsistentcy}{{C.2}{33}{Proof of Theorem~\ref {thm:general_consistency}}{subsection.0.C.2}{}}
+\citation{li2024optimality}
+\citation{li2024optimality}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Proof of Theorem~\ref {thm:optimality}}{34}{subsection.0.C.3}\protected@file@percent }
+\newlabel{sec:proof_minimax}{{C.3}{34}{Proof of Theorem~\ref {thm:optimality}}{subsection.0.C.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {C.3.1}Type-I error: }{34}{subsubsection.0.C.3.1}\protected@file@percent }
+\newlabel{sec:Type_I_minimax}{{C.3.1}{34}{Type-I error:}{subsubsection.0.C.3.1}{}}
+\newlabel{eq:gausskernel_1}{{C.28}{34}{Type-I error:}{equation.0.C.28}{}}
+\newlabel{eq:gausskernel_2}{{C.29}{34}{Type-I error:}{equation.0.C.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {C.3.2}Consistency}{35}{subsubsection.0.C.3.2}\protected@file@percent }
+\newlabel{sec:consistency_minimax}{{C.3.2}{35}{Consistency}{subsubsection.0.C.3.2}{}}
+\newlabel{eq:consistency_1}{{C.30}{35}{Consistency}{equation.0.C.30}{}}
+\newlabel{eq:consistency_2}{{C.31}{35}{Consistency}{equation.0.C.31}{}}
+\@writefile{toc}{\contentsline {paragraph}{Proof of (\ref {eq:consistency_1}): }{35}{section*.18}\protected@file@percent }
+\newlabel{eq:con1_num_expand}{{C.32}{35}{Proof of (\ref {eq:consistency_1}):}{equation.0.C.32}{}}
+\citation{shekhar2022permutation}
+\citation{li2024optimality}
+\newlabel{eq:bdd_two_star_H}{{C.33}{36}{Proof of (\ref {eq:consistency_1}):}{equation.0.C.33}{}}
+\newlabel{eq:bdd_t1_alt}{{C.34}{36}{Proof of (\ref {eq:consistency_1}):}{equation.0.C.34}{}}
+\newlabel{eq:bdd_2nd_moment}{{C.35}{36}{Proof of (\ref {eq:consistency_1}):}{equation.0.C.35}{}}
+\@writefile{toc}{\contentsline {paragraph}{Proof of (\ref {eq:consistency_2}):}{37}{section*.19}\protected@file@percent }
+\newlabel{eq:bdd_var_2}{{C.36}{37}{Proof of (\ref {eq:consistency_2}):}{equation.0.C.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Proof of Theorem~\ref {thm:fixed_consistency} and Theorem~\ref {thm:general_alt_dist}}{37}{section.0.D}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Proof of Theorem~\ref {thm:fixed_consistency}}{37}{subsection.0.D.1}\protected@file@percent }
+\newlabel{sec:proofof_fixed_consistency}{{D.1}{37}{Proof of Theorem~\ref {thm:fixed_consistency}}{subsection.0.D.1}{}}
+\newlabel{eq:sigma_n_exp_0}{{D.1}{38}{Proof of Theorem~\ref {thm:fixed_consistency}}{equation.0.D.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Proof of Theorem~\ref {thm:general_alt_dist}}{38}{subsection.0.D.2}\protected@file@percent }
+\newlabel{sec:proofof_thm_alt}{{D.2}{38}{Proof of Theorem~\ref {thm:general_alt_dist}}{subsection.0.D.2}{}}
+\newlabel{eq:w_insq_sum_lim}{{D.2}{38}{Proof of Theorem~\ref {thm:general_alt_dist}}{equation.0.D.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {D.2.1}Proof of (\ref {eq:w_insq_sum_lim}):}{39}{subsubsection.0.D.2.1}\protected@file@percent }
+\newlabel{sec:proof_of_S_n_convvg}{{D.2.1}{39}{Proof of (\ref {eq:w_insq_sum_lim}):}{subsubsection.0.D.2.1}{}}
+\citation{berlinet2011reproducing}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Technical Results}{40}{section.0.E}\protected@file@percent }
+\newlabel{lemma:E_barK_sq_positive}{{20}{40}{Technical Results}{section.0.E}{}}
+\newlabel{lemma:sumip}{{21}{40}{Technical Results}{section.0.E}{}}
+\@writefile{toc}{\contentsline {paragraph}{Case 1: $p > -1$}{41}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case 2: $p = -1$}{41}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case 3: $p < -1$}{41}{section*.22}\protected@file@percent }
+\citation{apostol1999elementary}
+\newlabel{lemma:i_2alpha_convg_rate}{{22}{42}{Technical Results}{section*.22}{}}
+\newlabel{eq:i_1_2alpha_decomp}{{E.1}{42}{Technical Results}{equation.0.E.1}{}}
+\newlabel{eq:i_2alpha_1_bdd}{{E.2}{42}{Technical Results}{equation.0.E.2}{}}
+\newlabel{eq:i_2alpha_bdd}{{E.3}{42}{Technical Results}{equation.0.E.3}{}}
+\newlabel{lemma:var_lim_half}{{23}{42}{Technical Results}{equation.0.E.3}{}}
+\citation{apostol1999elementary}
+\newlabel{eq:i_1_alpha_lim}{{E.4}{43}{Technical Results}{equation.0.E.4}{}}
+\newlabel{lemma:gauss_kernel_prod}{{24}{43}{Technical Results}{equation.0.E.4}{}}
+\newlabel{jmlrend}{{E}{44}{end of A Martingale Kernel Two-Sample Test}{section*.23}{}}
+\gdef \@abspage@last{44}

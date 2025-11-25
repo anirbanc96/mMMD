@@ -1,0 +1,47 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Overview of the Proposed Method}{2}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Related Works}{3}{subsection.0.1.2}%
+\contentsline {section}{\numberline {2}The martingale Maximum Mean Discrepancy $(m\mathrm {MMD})$ Test}{4}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Preliminaries}{4}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Deriving the $m\mathrm {MMD}$ test}{5}{subsection.0.2.2}%
+\contentsline {section}{\numberline {3}Asymptotic Null Distribution of $m\mathrm {MMD}$ Test Statistic}{7}{section.0.3}%
+\contentsline {section}{\numberline {4}Consistency of the $m\mathrm {MMD}$ Test}{8}{section.0.4}%
+\contentsline {section}{\numberline {5}Distribution under the alternative}{9}{section.0.5}%
+\contentsline {section}{\numberline {6}Experiments}{9}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Limiting Null Distribution of $\eta _n$}{10}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}Power Experiments}{10}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.3}Real Data Experiment}{11}{subsection.0.6.3}%
+\contentsline {section}{\numberline {7}Extensions}{12}{section.0.7}%
+\contentsline {subsection}{\numberline {7.1}\texttt {mmMMD:} Multi-kernel test using $m\mathrm {MMD}$}{12}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {7.2}Generalizing the $m\mathrm {MMD}$ Statistic}{13}{subsection.0.7.2}%
+\contentsline {section}{\numberline {8}Conclusion and Future Work}{14}{section.0.8}%
+\contentsline {section}{\numberline {A}A general class of Martingale based MMD two-sample test}{20}{section.0.A}%
+\contentsline {subsection}{\numberline {A.1}Asymptotic Null Distribution of $T_{n,\gamma }$}{20}{subsection.0.A.1}%
+\contentsline {subsection}{\numberline {A.2}Consistency against fixed alternatives}{22}{subsection.0.A.2}%
+\contentsline {subsection}{\numberline {A.3}Minimax optimality against smooth local alternatives}{23}{subsection.0.A.3}%
+\contentsline {section}{\numberline {B}Additional Experiments}{23}{section.0.B}%
+\contentsline {subsection}{\numberline {B.1}Comparing performance of $T_{n,\gamma }$ for different $\gamma $}{24}{subsection.0.B.1}%
+\contentsline {subsection}{\numberline {B.2}Type-I validity of $m\mathrm {MMD}$}{24}{subsection.0.B.2}%
+\contentsline {subsection}{\numberline {B.3}Performance in minimax regime}{25}{subsection.0.B.3}%
+\contentsline {section}{\numberline {C}Proof of results from Section~\ref {sec:Tngamma}}{25}{section.0.C}%
+\contentsline {subsection}{\numberline {C.1}Proof of Theorem~\ref {thm:berry_essen_H0}}{26}{subsection.0.C.1}%
+\contentsline {subsubsection}{\numberline {C.1.1}Proof of Lemma~\ref {lemma:4thmmntbdd}}{27}{subsubsection.0.C.1.1}%
+\contentsline {subsubsection}{\numberline {C.1.2}Proof of Lemma~\ref {lemma:2nd_term_bdd}}{28}{subsubsection.0.C.1.2}%
+\contentsline {paragraph}{Bound on $L_{1,n,\gamma }$:}{30}{section*.15}%
+\contentsline {paragraph}{Bound on $\zeta _{n,\gamma }$:}{31}{section*.16}%
+\contentsline {paragraph}{Bound on $L_{2,n,\gamma } - L_{2,n,\gamma }^\circ $}{32}{section*.17}%
+\contentsline {subsubsection}{\numberline {C.1.3}Proof of (\ref {eq:H4Kbar4}):}{33}{subsubsection.0.C.1.3}%
+\contentsline {subsection}{\numberline {C.2}Proof of Theorem~\ref {thm:general_consistency}}{33}{subsection.0.C.2}%
+\contentsline {subsection}{\numberline {C.3}Proof of Theorem~\ref {thm:optimality}}{34}{subsection.0.C.3}%
+\contentsline {subsubsection}{\numberline {C.3.1}Type-I error: }{34}{subsubsection.0.C.3.1}%
+\contentsline {subsubsection}{\numberline {C.3.2}Consistency}{35}{subsubsection.0.C.3.2}%
+\contentsline {paragraph}{Proof of (\ref {eq:consistency_1}): }{35}{section*.18}%
+\contentsline {paragraph}{Proof of (\ref {eq:consistency_2}):}{37}{section*.19}%
+\contentsline {section}{\numberline {D}Proof of Theorem~\ref {thm:fixed_consistency} and Theorem~\ref {thm:general_alt_dist}}{37}{section.0.D}%
+\contentsline {subsection}{\numberline {D.1}Proof of Theorem~\ref {thm:fixed_consistency}}{37}{subsection.0.D.1}%
+\contentsline {subsection}{\numberline {D.2}Proof of Theorem~\ref {thm:general_alt_dist}}{38}{subsection.0.D.2}%
+\contentsline {subsubsection}{\numberline {D.2.1}Proof of (\ref {eq:w_insq_sum_lim}):}{39}{subsubsection.0.D.2.1}%
+\contentsline {section}{\numberline {E}Technical Results}{40}{section.0.E}%
+\contentsline {paragraph}{Case 1: $p > -1$}{41}{section*.20}%
+\contentsline {paragraph}{Case 2: $p = -1$}{41}{section*.21}%
+\contentsline {paragraph}{Case 3: $p < -1$}{41}{section*.22}%
