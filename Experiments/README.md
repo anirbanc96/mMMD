@@ -7,7 +7,7 @@ This directory contains the code and results for the experiments presented in **
 - **Experiments/MNIST/**  
   Experiments evaluating the mMMD test (and baselines) on the MNIST dataset. This directory contains two subfolders:
   - **comparison/**: Experiments comparing mMMD with baseline methods, corresponding to Section 6.3.
-  - **gamma/**: Experiments studying performance across the family of test statistics \( T_{n,\gamma} \), as presented in Section B.1.
+  - **gamma/**: Experiments studying performance across the family of test statistics $T_{n,\gamma}$, as presented in Section B.1.
 
 - **Experiments/distribution/**  
   Experiments validating the null distribution of the mMMD statistic, corresponding to Section 6.1.
