@@ -1,64 +1,30 @@
 # Experiments
 
-This folder contains the experimental code, configs, and results used to evaluate the mMMD method. Each subfolder focuses on a specific set of experiments.
+This directory contains the code and results for the experiments presented in **_A Martingale Kernel Two-Sample Test_**. The experiments are organized into seven subdirectories, each corresponding to a specific experimental setting or evaluation goal discussed in the paper.
 
-## Structure
+## Directory Structure
 
-- MNIST
-  - Experiments that run the mMMD (and baselines) on the MNIST dataset. This folder is divided into two-subfolders.
+- **Experiments/MNIST/**  
+  Experiments evaluating the mMMD test (and baselines) on the MNIST dataset. This directory contains two subfolders:
+  - **comparison/**: Experiments comparing mMMD with baseline methods, corresponding to Section 6.3.
+  - **gamma/**: Experiments studying performance across the family of test statistics \( T_{n,\gamma} \), as presented in Section B.1.
 
-- distribution
-  - Synthetic distribution experiments used to validate behavior of the test statistics and estimators under controlled distribution shifts.
+- **Experiments/distribution/**  
+  Experiments validating the null distribution of the mMMD statistic, corresponding to Section 6.1.
 
-- minimax
-  - Minimax-style experiments (adversarial/robust optimization) used to evaluate worst-case performance and stability of estimators.
+- **Experiments/minimax/**  
+  Experiments comparing the performance of the mMMD test with baseline methods in the minimax regime, as presented in Section B.3.
 
-- mmMMD
-  - Experiments for the mmMMD variant of the method (multi-kernel / multi-modal setups). Contains experiments comparing mmMMD with baseline approaches.
+- **Experiments/mmMMD/**  
+  Experiments for the multi-kernel variant (mmMMD), as presented in Section 7.1. This directory contains two subfolders:
+  - **distribution/**: Validation of the null distribution of the mmMMD statistic.
+  - **power/**: Power comparisons between mmMMD and baseline methods.
 
-- power
-  - Statistical power experiments that measure the detection ability of the tests across effect sizes and sample sizes.
+- **Experiments/power/**  
+  Experiments comparing the power of the mMMD test against baseline methods, corresponding to Section 6.2.
 
-- time
-  - Runtime and scalability experiments (time vs. sample size, time vs. dimensionality). Useful for profiling and measuring practical performance.
+- **Experiments/time/**  
+  Runtime comparison experiments between mMMD and baseline methods, corresponding to Figure 1(c).
 
-- typeI
-  - Type I error / false positive rate experiments to verify test calibration under the null hypothesis.
-
-
-## How to run
-
-General steps to run experiments (each subfolder may include its own README or runnable scripts with more specific options):
-
-1. Create and activate a Python environment (recommended):
-   python -m venv .venv
-   source .venv/bin/activate  # on Windows: .venv\Scripts\activate
-
-2. Install dependencies:
-   pip install -r requirements.txt
-
-3. Run an experiment from a subfolder. For example (from repository root):
-   cd Experiments/MNIST
-   python run_experiment.py --config configs/example.yaml
-
-4. Results and logs
-   - Each experiment should save outputs (models, logs, figures) to an outputs/ or results/ directory inside the subfolder. Check the corresponding script for exact paths.
-
-Notes:
-- Some experiments may download datasets automatically (e.g., MNIST) or expect them in a `data/` directory at the repository root. Check the subfolder scripts for details.
-- To ensure reproducibility, set random seeds where provided (look for a `seed` option in configs/ or script arguments).
-- For heavy experiments that require GPUs, launch the script with CUDA available and set device arguments where supported.
-
-## Reproducing results
-
-- If you plan to reproduce the figures or tables from the paper, start from the configuration files included in the relevant experiment folder and run the corresponding `run_*.py` or evaluation scripts. Consider using smaller toy configs for debugging before running full-scale experiments.
-
-## Contributing
-
-If you add new experiments, please:
-- Put them in a new subfolder under Experiments with a short README explaining the purpose, how to run, and where outputs are stored.
-- Add a reference to the new subfolder in this README.
-
-## Contact
-
-For questions about the experiments or reproducing results, open an issue in this repository or contact the maintainer: anirbanc96.
+- **Experiments/typeI/**  
+  Experiments evaluating type-I error control of the mMMD test and baseline methods, corresponding to Section B.2.
