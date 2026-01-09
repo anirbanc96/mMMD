@@ -6,7 +6,6 @@ This folder contains the experimental code, configs, and results used to evaluat
 
 - MNIST
   - Experiments that run the mMMD (and baselines) on the MNIST dataset. This folder is divided into two-subfolders.
-    - 
 
 - distribution
   - Synthetic distribution experiments used to validate behavior of the test statistics and estimators under controlled distribution shifts.
