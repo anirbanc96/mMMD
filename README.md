@@ -52,6 +52,10 @@ All experiments reported in the paper are fully reproducible. The code is organi
 
 Additional dependencies are specified within individual notebooks.
 
+## Notes
+
+Implementation of `xMMD` test is adapted from [A Permutation-Free Kernel Two-Sample Test](https://proceedings.neurips.cc/paper_files/paper/2022/hash/731b952bdc833485eb72f458cdd5c489-Abstract-Conference.html) and the implementation of `BetMMD` is adapted from [Nonparametric Two-Sample Testing by Betting](https://ieeexplore.ieee.org/document/10220229).
+
 ---
 
 ## Running the Experiments
