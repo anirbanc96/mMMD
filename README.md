@@ -37,7 +37,7 @@ All experiments reported in the paper are fully reproducible. The code is organi
 - **`Experiments/distribution`** : Validation of the null distribution of the mMMD statistic (Section 6.1).
 - **`Experiments/minimax`** : Performance comparison of mMMD and baseline methods in the minimax regime (Section B.3).
 - **`Experiments/mmMMD`** : Experiments for the multi-kernel variant (mmMMD) introduced in Section 7.1.
-  - `distribution`: Validation of the null distribution of the mmMMD statistic.
+  - `distribution`: Validation of the null distribution of the mmMMD statistic (Figure 7).
   - `power`: Empirical power comparison with baseline methods (Figure 7).
 - **`Experiments/power`** : Power comparison between the mMMD test and baseline methods (Section 6.2).
 - **`Experiments/time`** : Runtime comparisons between mMMD and baseline methods (Figure 1(c)).
