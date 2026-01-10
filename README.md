@@ -4,27 +4,29 @@
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-This repository contains the experimental code for the paper  
-**[*A Martingale Kernel Two-Sample Test*](https://arxiv.org/abs/2510.11853)**.
+This repository contains the experimental code for the paper **[*A Martingale Kernel Two-Sample Test*](https://arxiv.org/abs/2510.11853)**.
 
-All experiments reported in the paper are fully reproducible. The code is organized by experiment type under the `Experiments/` directory.
+All experiments reported in the paper are fully reproducible. The code is organized by experiment type under the `Experiments` directory.
 
 ---
 
 ## Repository Structure
 
-Experiments/
-├── MNIST/
-│ ├── comparison/
-│ └── gamma/
-├── distribution/
-├── minimax/
-├── mmMMD/
-│ ├── distribution/
-│ └── power/
-├── power/
-├── time/
-└── typeI/
+```text
+.
+├── Experiments/
+│   ├── MNIST/
+│   │   ├── comparison/
+│   │   └── gamma/
+│   ├── distribution/
+│   ├── minimax/
+│   ├── mmMMD/
+│   │   ├── distribution/
+│   │   └── power/
+│   ├── power/
+│   ├── time/
+│   └── typeI/
+```
 
 
 ### Description of Folders
