@@ -1,4 +1,4 @@
-# A Martingale Kernel Two-Sample Test — Experiments
+# A Martingale Kernel Two-Sample Test
 
 [![Paper](https://img.shields.io/badge/arXiv-2510.11853-b31b1b.svg)](https://arxiv.org/abs/2510.11853)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
