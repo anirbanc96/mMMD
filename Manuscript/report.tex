@@ -13,6 +13,8 @@
 \usepackage{subcaption}
 \usepackage[export]{adjustbox}
 \usepackage{float}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue}
 
 % mathbb
 \newcommand{\E}{\mathbb{E}}
@@ -348,7 +350,7 @@ Using the above theorem, when $P,Q$ and $\sfK$ does not depend on $n$ we can eas
 where $h(\bZ)$ is defined in \eqref{eq:def_h_n} (without the dependence on $n$). We note that the asymptotic distribution in \eqref{eq:alt_dist} closely resembles that of the original quadratic-time MMD estimator from \citet{gretton2012kernel}, having a constant factor 5 in the asymptotic variance in place of 4. While the results in Section~\ref{sec:null_dist_section} are similar to those for the cross-MMD test by \citet{shekhar2022permutation}, the latter do not establish distributional convergence under the alternative.
 
 \section{Experiments}\label{sec:experiments}
-We empirically evaluate the proposed $m\MMD$-test against the linear-time MMD test \citep{gretton2012kernel}, Block MMD with $B = \lfloor\sqrt{n}\rfloor$ \citep{zaremba2013b}, and cross-MMD \citep{shekhar2022permutation}, collectively referred to as computationally efficient MMD tests. Section~\ref{sec:empirical_null} validates the null distribution from Section~\ref{sec:null_dist_section}, while Sections~\ref{sec:power_sims} and~\ref{sec:real_data} compare performance on simulated and real data. In all experiments, we use the median heuristic for bandwidth selection. Although this choice is not supported by our theory (see Remark~\ref{remark:non_median_band}), nor by the theoretical guarantees in most prior works, it remains the standard in empirical studies due to its strong practical performance.
+We empirically evaluate the proposed $m\MMD$-test against the linear-time MMD test \citep{gretton2012kernel}, Block MMD with $B = \lfloor\sqrt{n}\rfloor$ \citep{zaremba2013b}, and cross-MMD \citep{shekhar2022permutation}, collectively referred to as computationally efficient MMD tests. Section~\ref{sec:empirical_null} validates the null distribution from Section~\ref{sec:null_dist_section}, while Sections~\ref{sec:power_sims} and~\ref{sec:real_data} compare performance on simulated and real data. In all experiments, we use the median heuristic for bandwidth selection. Although this choice is not supported by our theory (see Remark~\ref{remark:non_median_band}), nor by the theoretical guarantees in most prior works, it remains the standard in empirical studies due to its strong practical performance. Code for all experiments in this work is available at  \href{https://github.com/anirbanc96/mMMD}{https://github.com/anirbanc96/mMMD}. 
 
 \subsection{Limiting Null Distribution of $\eta_n$}\label{sec:empirical_null}
 In Theorem~\ref{thm:null_clt_fixed}, we established that the asymptotic null distribution of the $m$-MMD test statistic $\eta_n$ is standard Gaussian under mild conditions. In this section, we empirically validate this result across a range of settings, examining the impact of dimensionality, data distribution, and kernel choice. Specifically, we consider dimensions $d \in \{10, 100, 250, 500\}$; data distributions $\mathrm N_d(\mathbf{0}_d, \mathbf{I}_d)$ and $t_d(10)$; and both Gaussian and Laplace kernels. All experiments in this section use a sample size of $n = 200$ and $2000$ resamples for the empirical distributions.
@@ -1091,7 +1093,7 @@ Hence we conclude that for all $0\leq \gamma\leq 1$,
 \begin{align}\label{eq:zeta_bdd}
     \zeta_{n,\gamma}\lesssim t_{n,\gamma,2}.
 \end{align}
-Finally in the following we bound the difference $L_{2,n,\gamma} - L_{2,n,\gamma}$.
+Finally in the following we bound the difference $L_{2,n,\gamma} - L_{2,n,\gamma}^\circ$.
 
 \paragraph{Bound on $L_{2,n,\gamma} - L_{2,n,\gamma}^\circ$}
 To bound the difference $L_{2,n,\gamma} - L_{2,n,\gamma}^\circ$ note that,
