@@ -13,7 +13,6 @@ All experiments reported in the paper are fully reproducible. The code is organi
 ## Repository Structure
 
 ```text
-.
 ├── Experiments/
 │   ├── MNIST/
 │   │   ├── comparison/
@@ -32,9 +31,9 @@ All experiments reported in the paper are fully reproducible. The code is organi
 ### Description of Folders
 
 - **`Experiments/MNIST`** : Experiments evaluating the mMMD test, baseline methods, and the general family  
-  \( T_{n,\gamma} \) on the MNIST dataset.
+  $T_{n,\gamma}$ on the MNIST dataset.
   - `comparison`: Performance comparison of mMMD against baseline tests (Section 6.3).
-  - `gamma`: Effect of varying \( \gamma \) in the family \( T_{n,\gamma} \) (Section B.1).
+  - `gamma`: Effect of varying $\gamma$ in the family $T_{n,\gamma}$ (Section B.1).
 - **`Experiments/distribution`** : Validation of the null distribution of the mMMD statistic (Section 6.1).
 - **`Experiments/minimax`** : Performance comparison of mMMD and baseline methods in the minimax regime (Section B.3).
 - **`Experiments/mmMMD`** : Experiments for the multi-kernel variant (mmMMD) introduced in Section 7.1.
