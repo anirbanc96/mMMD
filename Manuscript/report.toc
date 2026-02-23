@@ -7,13 +7,13 @@
 \contentsline {section}{\numberline {3}Asymptotic Null Distribution of $m\mathrm {MMD}$ Test Statistic}{7}{section.0.3}%
 \contentsline {section}{\numberline {4}Consistency of the $m\mathrm {MMD}$ Test}{8}{section.0.4}%
 \contentsline {section}{\numberline {5}Distribution under the alternative}{9}{section.0.5}%
-\contentsline {section}{\numberline {6}Experiments}{9}{section.0.6}%
+\contentsline {section}{\numberline {6}Experiments}{10}{section.0.6}%
 \contentsline {subsection}{\numberline {6.1}Limiting Null Distribution of $\eta _n$}{10}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {6.2}Power Experiments}{10}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.2}Power Experiments}{11}{subsection.0.6.2}%
 \contentsline {subsection}{\numberline {6.3}Real Data Experiment}{11}{subsection.0.6.3}%
 \contentsline {section}{\numberline {7}Extensions}{12}{section.0.7}%
 \contentsline {subsection}{\numberline {7.1}\texttt {mmMMD:} Multi-kernel test using $m\mathrm {MMD}$}{12}{subsection.0.7.1}%
-\contentsline {subsection}{\numberline {7.2}Generalizing the $m\mathrm {MMD}$ Statistic}{13}{subsection.0.7.2}%
+\contentsline {subsection}{\numberline {7.2}Generalizing the $m\mathrm {MMD}$ Statistic}{14}{subsection.0.7.2}%
 \contentsline {section}{\numberline {8}Conclusion and Future Work}{14}{section.0.8}%
 \contentsline {section}{\numberline {A}A general class of Martingale based MMD two-sample test}{20}{section.0.A}%
 \contentsline {subsection}{\numberline {A.1}Asymptotic Null Distribution of $T_{n,\gamma }$}{20}{subsection.0.A.1}%

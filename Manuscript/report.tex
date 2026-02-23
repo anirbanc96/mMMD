@@ -267,7 +267,25 @@ For a kernel $\sfK$, and define its centered version as $\bsfK(x, y) = \left\lan
     \end{align*}
 \end{theorem}
 
-The above theorem confirms that, under $\bH_0$, the asymptotic distribution of the $m\MMD$ test statistic $\eta_n$ is standard Gaussian. Consequently, the test $\Psi_n$ defined in~\eqref{eq:mMMD_test} asymptotically controls the type-I error at level $\alpha$.\\
+The above theorem confirms that, under $\bH_0$, the asymptotic distribution of the $m\MMD$ test statistic $\eta_n$ is standard Gaussian. Consequently, the test $\Psi_n$ defined in~\eqref{eq:mMMD_test} asymptotically controls the type-I error at level $\alpha$.
+
+\begin{remark}[Martingale Energy Two-Sample Test]
+Take $\cX = \R^d$ and consider the distance induced kernel
+$\sfK(x,y) = \frac{1}{2}\big(\|x\|_2 + \|y\|_2 - \|x-y\|_2\big)$, so that the squared maximum mean discrepancy satisfies $\MMD^2[P,Q;\sfK] = \frac{1}{2}\rho(P,Q)$, where $\rho(P,Q)$ denotes the classical energy distance between $P$ and $Q$ \citep{szekely2003statistics,szekely2013energy, sejdinovic2013equivalence}. This kernel is characteristic with respect to $\cM_{\sfK}^1$, providing an RKHS representation of the energy distance. With this choice of kernel, we can define a \emph{martingale energy two-sample test} using the normalised martingale energy statistic as,
+\begin{align*}
+\eta_{n,\rho} = \frac{
+\frac{1}{n} \sum_{i=2}^{n} \frac{1}{i} \sum_{j=1}^{i-1} 
+\|X_i - Y_j\|_2 + \|X_j - Y_i\|_2 - \|X_i - X_j\|_2 - \|Y_i - Y_j\|_2
+}{
+\sqrt{
+\frac{1}{n^2} \sum_{i=2}^{n} 
+\Big( \frac{1}{i} \sum_{j=1}^{i-1} 
+\|X_i - Y_j\|_2 + \|X_j - Y_i\|_2 - \|X_i - X_j\|_2 - \|Y_i - Y_j\|_2
+\Big)^2 }
+}.
+\end{align*}
+Note that assumptions of Theorem \ref{thm:null_clt_fixed} are satisfied whenever $\mathbb{E}\left[\|X\|_2^4\right] < \infty$, and under the null hypothesis it is asymptotically standard normal. This allows us to define the martingale energy test $\Psi_{n,\rho} = \mathbf{1}\{\eta_{n,\rho} > z_{1-\alpha}\}$, where (as before) $z_{1-\alpha}$ denotes the $(1-\alpha)$-quantile of the standard normal distribution.
+\end{remark}
 
 \noindent
 The above result can be significantly extended to accommodate more general dependencies of the kernel, the distribution, and even the sample space on the sample size $n$. Specifically, we now allow the kernel $\mathsf{K}_n$, the null distribution $P_n (= Q_n)$, and the dimension $d_n$ to vary with $n$\footnote{To denote dependence of a parameter $\theta$ on $n$ we use the notation $\theta_n$.}. In this more general setting, the next result shows that, under suitable conditions, the test statistic $\eta_n$ continues to converge in distribution to a standard Gaussian under the null.
@@ -447,16 +465,20 @@ We present the performance comparison in Figure~\ref{fig:power_comparison}. Acro
 
 \subsection{Real Data Experiment}\label{sec:real_data}
 
+In this section we compare the performance of our proposed test with computationally efficient MMD tests on the MNIST \citep{lecun1998mnist} data set. We evaluate the performance of tests for the test from \eqref{eq:H01} with the following $5$ pairs of sets of digits: \texttt{Group 1}: $P = \{2, 4, 8, 9\}$ and $Q = \{3, 4, 7, 9\}$, \texttt{Group 2}: $P = \{1, 2, 4, 8, 9\}$ and $Q = \{1, 3, 4, 7, 9\}$, \texttt{Group 3}: $P = \{0, 1, 2, 4, 8, 9\}$ and $Q = \{0, 1, 3, 4, 7, 9\}$, \texttt{Group 4}: $P = \{0, 1, 2, 4, 5, 8, 9\}$ and\\ $Q = \{0, 1, 3, 4, 5, 7, 9\}$, and \texttt{Group 5}: $P = \{0, 1, 2, 4, 5, 6, 8, 9\}$ and $Q = \{0, 1, 3, 4, 5, 6, 7, 9\}$. Similar experimental settings have been considered in \cite{schrab2023mmd} and \cite{chatterjee2025boosting}. 
+
 \begin{figure}[H]
   \centering
 
-  \begin{minipage}[t]{0.55\textwidth}
-  
-    In this section we compare the performance of our proposed test with computationally efficient MMD tests on the MNIST \citep{lecun1998mnist} data set. We evaluate the performance of tests for the test from \eqref{eq:H01} with the following $5$ pairs of sets of digits: \texttt{Group 1}: $P = \{2, 4, 8, 9\}$ and $Q = \{3, 4, 7, 9\}$, \texttt{Group 2}: $P = \{1, 2, 4, 8, 9\}$ and $Q = \{1, 3, 4, 7, 9\}$, \texttt{Group 3}: $P = \{0, 1, 2, 4, 8, 9\}$ and $Q = \{0, 1, 3, 4, 7, 9\}$, \texttt{Group 4}: $P = \{0, 1, 2, 4, 5, 8, 9\}$ and\\ $Q = \{0, 1, 3, 4, 5, 7, 9\}$, and \texttt{Group 5}: $P = \{0, 1, 2, 4, 5, 6, 8, 9\}$ and $Q = \{0, 1, 3, 4, 5, 6, 7, 9\}$. Similar experimental settings have been considered in \cite{schrab2023mmd,chatterjee2025boosting}.
-    For each of the five methods, we draw $100$ 
+  \begin{minipage}[t]{0.5\textwidth}
+  The entire procedure is repeated 100 times, and the resulting empirical power is reported in Figure~\ref{fig:mnist_asymptotic}.
+
+\noindent
+For each of the five methods, we draw $100$ samples with replacement from the sets $P$ and $Q$ and use the asymptotic Gaussian distribution to calibrate the test under $\bm{H}_0$ at a significance level of $0.05$. Notice that by construction, with increasing group number it becomes harder to detect difference between the distributions. Indeed in Figure~\ref{fig:mnist_asymptotic} we note that the power of all methods decreases with increasing group index. However for the proposed $m\MMD$-test and the cross-MMD tests the power decrement is much slower and overall they perform significantly better than other computationally efficient variants.
+    
   \end{minipage}
   \hfill
-  \begin{minipage}[t]{0.4\textwidth}
+  \begin{minipage}[t]{0.45\textwidth}
     \vspace{0pt}
     \centering
     \includegraphics[width=\linewidth]{plots/empirical_power_comparison_plot.pdf}
@@ -466,10 +488,6 @@ We present the performance comparison in Figure~\ref{fig:power_comparison}. Acro
 \end{figure}
 \vspace{-15pt}
 \noindent
-samples with replacement from the sets $P$ and $Q$ and use the asymptotic Gaussian distribution to calibrate the test under $\bm{H}_0$ at a significance level of $0.05$. The entire procedure is repeated 100 times, and the resulting empirical power is reported in Figure~\ref{fig:mnist_asymptotic}.
-
-\noindent
-Notice that by construction, with increasing group number it becomes harder to detect difference between the distributions. Indeed in Figure~\ref{fig:mnist_asymptotic} we note that the power of all methods decreases with increasing group index. However for the proposed $m\MMD$-test and the cross-MMD tests the power decrement is much slower and overall they perform significantly better than other computationally efficient variants.
 
 \section{Extensions}\label{sec:broad_scope}
 In this section, we explore two broad applications of the \emph{mMMD}-test. In Section~\ref{sec:multi_kernel}, we propose combining multiple kernels with the $m\MMD$-test to potentially enhance power, and establish the null distribution of a corresponding Mahalanobis-distance-type test statistic. In Section~\ref{sec:general_mMMD}, we introduce a general family of MMD-based test statistics that interpolate between the quadratic-time MMD and the $m\MMD$ statistic. We study this family in more detail in Section~\ref{sec:Tngamma}.
